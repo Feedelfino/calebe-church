@@ -65,6 +65,7 @@ calebe-church/
 ├── frontend/
 ├── Docs/
 ├── Diagramas/
+├── CHANGELOG.md
 └── README.md
 ```
 
@@ -86,7 +87,23 @@ Documentos atuais:
 07 — Estrutura de Wireframe e Prototipação
 08 — Organização do Arquivo Figma
 09 — Análise do Protótipo Figma Make
+10 — Roadmap e Status do Projeto
 ```
+---
+
+## Histórico do Projeto
+
+O histórico técnico e evolutivo do projeto está documentado no arquivo:
+
+```txt
+CHANGELOG.md
+```
+
+O CHANGELOG registra:
+- funcionalidades adicionadas;
+- mudanças estruturais;
+- correções;
+- evolução técnica do projeto.
 
 ---
 
@@ -146,7 +163,7 @@ Espiritual
 Documentação inicial: concluída
 Git local: configurado
 GitHub: configurado
-Frontend: não iniciado
+Frontend: estrutura inicial concluída
 Backend: não iniciado
 Banco de dados: não iniciado
 Deploy: não iniciado
@@ -158,16 +175,16 @@ Deploy: não iniciado
 
 ```txt
 Documentação inicial: 90%
-Git/GitHub: 80%
-Figma/referência visual: 30%
-Frontend: 0%
+Git/GitHub: 100%
+Figma/referência visual: 35%
+Frontend: 30%
 Backend: 0%
 Banco de dados: 0%
-QA: 0%
+QA: 5%
 Deploy: 0%
 
-Progresso geral estimado: 14%
-Falta estimada: 86%
+Progresso geral estimado: 28%
+Falta estimada: 72%
 ```
 
 ---
