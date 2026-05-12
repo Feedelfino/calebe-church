@@ -169,7 +169,7 @@ Status: ⚪ Não iniciado
 ## Frontend
 
 ```txt
-30% concluído
+45% concluído
 ```
 
 ## Backend
@@ -201,8 +201,8 @@ Status: ⚪ Não iniciado
 # 5. Progresso Geral Estimado
 
 ```txt
-Progresso geral: 28%
-Falta estimada: 72%
+Progresso geral: 36%
+Falta estimada: 64%
 ```
 
 ---
@@ -216,7 +216,8 @@ Falta estimada: 72%
 - Variáveis CSS
 - Container global
 - Estrutura React inicial
-
+- AboutSection
+- ServicesSection
 ## Estrutura
 - Git
 - GitHub
@@ -228,11 +229,10 @@ Falta estimada: 72%
 
 # 7. Próximos Passos Imediatos
 
-- Criar AboutSection
+- Criar MinistriesSection
 - Criar Footer
 - Melhorar responsividade
 - Refinar HeroSection
-- Estruturar seções institucionais
 
 ---
 

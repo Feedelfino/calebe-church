@@ -38,7 +38,10 @@ button {
 
 .container {
   width: 100%;
+
   max-width: var(--container-width);
 
   margin: 0auto;
+
+  padding: 0 20px;
 }
