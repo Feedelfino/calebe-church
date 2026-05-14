@@ -166,10 +166,27 @@ Status: ⚪ Não iniciado
 100% concluído
 ```
 
-## Frontend
+## Frontend — Progresso por Entregáveis
+
+Critério de cálculo:
 
 ```txt
-45% concluído
+Percentual = entregáveis concluídos / total de entregáveis planejados
+
+[x] Navbar
+[x] HeroSection
+[x] AboutSection
+[x] ServicesSection
+[x] MinistriesSection
+[x] Footer
+[ ] NAFSection
+[ ] SocialMediaSection
+[ ] LocationSection
+[ ] Responsividade mobile
+[ ] Refinamento visual final
+```txt
+Concluído: 6/11
+Frontend: 54%
 ```
 
 ## Backend
@@ -201,8 +218,8 @@ Status: ⚪ Não iniciado
 # 5. Progresso Geral Estimado
 
 ```txt
-Progresso geral: 36%
-Falta estimada: 64%
+Progresso geral: 40%
+Falta estimada: 60%
 ```
 
 ---
@@ -218,6 +235,9 @@ Falta estimada: 64%
 - Estrutura React inicial
 - AboutSection
 - ServicesSection
+- MinistriesSection
+- Footer institucional
+
 ## Estrutura
 - Git
 - GitHub
@@ -229,10 +249,11 @@ Falta estimada: 64%
 
 # 7. Próximos Passos Imediatos
 
-- Criar MinistriesSection
-- Criar Footer
-- Melhorar responsividade
-- Refinar HeroSection
+- Criar NAFSection
+- Criar SocialMediaSection
+- Criar LocationSection
+- Implementar responsividade mobile
+- Refinar visual final da HomePage
 
 ---
 

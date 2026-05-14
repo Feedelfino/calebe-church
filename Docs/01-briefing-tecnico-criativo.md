@@ -172,7 +172,7 @@ Frontend:
 - React
 - TypeScript
 - Vite
-- CSS ou Tailwind
+- Estilização: CSS modular com variáveis CSS globais
 
 Backend:
 
@@ -245,16 +245,7 @@ Palavras-chave iniciais:
 
 ## 13. Segurança e LGPD
 
-Na primeira versão, o site deve coletar o mínimo possível de dados pessoais.
-
-Cuidados:
-
-- não pedir dados desnecessários;
-- explicar finalidade do contato;
-- validar informações enviadas;
-- proteger formulários contra spam;
-- não expor dados pessoais publicamente;
-- usar HTTPS no deploy.
+Segurança e LGPD: ver Documento 11 — Segurança e LGPD
 
 ---
 

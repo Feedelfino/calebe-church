@@ -120,3 +120,42 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 - Correção de classes do Footer
 - Correção de alinhamento do Footer com Flexbox
 - Correção de typos institucionais
+
+# [2026-05-14]
+
+## Added
+
+### Documentação
+- Criação do Documento 11 — Segurança e LGPD
+- Implementação de ADR (Architecture Decision Record)
+- Implementação oficial de tokens do Design System
+- Padronização documental com numeração oficial
+
+### Frontend
+- Refatoração do frontend para utilização de tokens globais
+- Integração do Design System ao CSS existente
+
+---
+
+## Changed
+
+### Documentação
+- Atualização do Roadmap com progresso calculável
+- Atualização das referências cruzadas entre documentos
+- Oficialização do CSS modular como padrão visual do projeto
+
+### Frontend
+- Refatoração de Navbar, Hero, About, Services, Ministries e Footer para utilização de tokens globais
+
+---
+
+## Fixed
+
+### Documentação
+- Correção de inconsistências no roadmap
+- Correção de duplicação de conteúdo LGPD
+- Correção de inconsistência documental entre roadmap e changelog
+
+### Frontend
+- Correção do token `--section-padding`
+- Correção estrutural do sistema global de estilos

@@ -7,17 +7,17 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px;
+    padding: var(--space-md);
 }
 
 header h2 {
     color: var(--color-secondary);
-    font-size: 2rem;
+    font-size: var(--font-size-2xl);
 }
 
 nav {
     display: flex;
-    gap: 24px;
+    gap: var(--space-md);
 }
 
 nav a {
@@ -25,7 +25,7 @@ nav a {
 
     text-decoration: none;
 
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     font-weight: 600;
 
     transition: 0.3s;

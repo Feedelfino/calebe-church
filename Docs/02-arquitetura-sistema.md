@@ -343,3 +343,67 @@ API REST + JSON
 Versionamento:
 Git + GitHub
 ```
+
+---
+
+# 19. Decisões de Arquitetura (ADR)
+
+## SQLite no Desenvolvimento
+
+Motivo:
+
+O SQLite foi escolhido para o ambiente de desenvolvimento por não exigir servidor separado, possuir configuração simples e permitir foco no aprendizado de backend, modelagem de dados e integração com APIs REST.
+
+A migração para PostgreSQL está prevista futuramente para ambiente de produção.
+
+---
+
+## FastAPI em vez de Django
+
+Motivo:
+
+O FastAPI foi escolhido por possuir:
+- excelente performance;
+- tipagem moderna com Python;
+- documentação automática com Swagger;
+- arquitetura mais enxuta para APIs REST;
+- menor complexidade inicial para aprendizado backend.
+
+---
+
+## React com Vite em vez de CRA
+
+Motivo:
+
+O Vite foi escolhido por oferecer:
+- inicialização mais rápida;
+- build mais performático;
+- configuração mais moderna;
+- melhor experiência de desenvolvimento;
+- alinhamento com padrões atuais do ecossistema React.
+
+---
+
+## CSS Modular com Variáveis Globais
+
+Motivo:
+
+O projeto adotou CSS modular com variáveis globais para:
+- maior controle visual;
+- aprendizado aprofundado de CSS;
+- implementação de Design System próprio;
+- independência de frameworks visuais externos;
+- padronização através de tokens globais.
+
+---
+
+## Estrutura Componentizada no Frontend
+
+Motivo:
+
+O frontend foi estruturado em componentes reutilizáveis para:
+- facilitar manutenção;
+- melhorar escalabilidade;
+- separar responsabilidades;
+- reduzir duplicação de código;
+- preparar o sistema para crescimento futuro.

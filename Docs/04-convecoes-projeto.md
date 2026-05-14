@@ -291,12 +291,7 @@ Boas práticas previstas:
 
 # 12. Estratégia de LGPD
 
-O sistema deverá:
-
-- coletar apenas dados necessários;
-- informar finalidade dos dados;
-- evitar armazenamento desnecessário;
-- proteger dados enviados.
+Segurança e LGPD: ver Documento 11 — Segurança e LGPD
 
 ---
 

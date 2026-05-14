@@ -1,5 +1,5 @@
 .footer {
-    padding: 80px 0;
+    padding: var(--space-xl) 0;
 
     background-color: var(--color-primary);
 
@@ -11,17 +11,17 @@
 
     justify-content: space-between;
 
-    gap: 48px;
+    gap: var(--space-xl);
 
     flex-wrap: wrap;
 }
 
 .footer-brand h2 {
-    margin-bottom: 16px;
+    margin-bottom: var(--space-md);
 
     color: var(--color-secondary);
 
-    font-size: 2rem;
+    font-size: var(--font-size-3xl);
 }
 
 .footer-brand p {
@@ -34,15 +34,16 @@
 
     flex-direction: column;
 
-    gap: 12px;
+    gap: var(--space-sm);
 }
 
 .footer-links h3,
 .footer-contact h3 {
-    margin-bottom: 12px;
+    margin-bottom: var(--space-sm);
 
     color: var(--color-secondary);
 
+    font-size: var(--font-size-lg);
 }
 
 .footer-links a {
