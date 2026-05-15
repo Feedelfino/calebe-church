@@ -2,7 +2,7 @@ import "../../styles/services-section.css"
 
 function ServicesSection() {
     return(
-        <section className="services-section">
+        <section id="services" className="services-section">
             <div className="container services-container">
                 <h2>Horários dos cultos</h2>
 

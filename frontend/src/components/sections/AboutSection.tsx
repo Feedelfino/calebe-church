@@ -2,7 +2,7 @@ import "../../styles/about-section.css";
 
 function AboutSection() {
     return (
-        <section className="about-section">
+        <section id="about" className="about-section">
             <div className="container about-container">
                 <h2>Sobre a Caleber Church</h2>
 

@@ -3,6 +3,7 @@ import HeroSection from "../components/sections/HeroSection"
 import AboutSection from "../components/sections/AboutSection"
 import ServicesSection from "../components/sections/ServicesSection"
 import MinistriesSection from "../components/sections/MinistriesSection"
+import NAFSection from "../components/sections/NAFSection"
 import Footer from "../components/layout/Footer"
 
 function HomePage() {
@@ -13,6 +14,7 @@ function HomePage() {
             <AboutSection />
             <ServicesSection />
             <MinistriesSection />
+            <NAFSection />
             <Footer />
         </>
     )

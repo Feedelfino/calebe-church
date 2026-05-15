@@ -2,7 +2,7 @@ import "../../styles/ministries-section.css"
 
 function MinistriesSection() {
     return (
-        <section className="ministries-section">
+        <section id="ministries" className="ministries-section">
             <div className="container ministries-container">
                 <h2>Ministérios</h2>
 

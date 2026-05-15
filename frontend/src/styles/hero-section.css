@@ -49,3 +49,23 @@
 .hero-content button:hover {
     opacity: 0.85;
 }
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 70vh;
+    }
+ 
+    .hero-content h1 {
+        font-size: var(--font-size-3xl);
+
+        line-height: 1.2;
+    }
+    .hero-content p {
+        font-size: var(--font-size-lg);
+    }
+    .hero-content button {
+        width: 100%;
+
+        max-width: 280px;
+    }
+}

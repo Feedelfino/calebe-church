@@ -2,7 +2,7 @@ import "../../styles/hero-section.css"
 
 function HeroSection() {
     return (
-        <section className="hero-section">
+        <section id="home" className="hero-section">
             <div className="hero-content">
                 <h1>Calebe Church</h1>
 

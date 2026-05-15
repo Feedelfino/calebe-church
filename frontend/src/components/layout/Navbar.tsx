@@ -7,12 +7,12 @@ function Navbar() {
                 <h2>Calebe Church</h2>
 
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Cultos</a>
-                    <a href="#">Ministérios</a>
-                    <a href="#">NAF</a>
-                    <a href="#">Contato</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#services">Cultos</a>
+                    <a href="#ministries">Ministérios</a>
+                    <a href="#naf">NAF</a>
+                    <a href="#contact">Contato</a>
                 </nav>
             </div>
         </header>
