@@ -22,9 +22,9 @@
 
 .service-card {
     width:100%;
-    max-width: 360px;
+    max-width: 320px;
 
-    padding: var(--space-xl);
+    padding: var(--space-lg);
 
     border-radius: 16px;
 
@@ -32,7 +32,15 @@
 
     text-align: left;
 
-    box-shadow: var(--shadow-card);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
 }
 
 .service-card span {

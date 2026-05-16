@@ -1,14 +1,22 @@
+import logoCalebe from "../../assets/logo-calebe.png"
 import "../../styles/hero-section.css"
 
 function HeroSection() {
     return (
         <section id="home" className="hero-section">
             <div className="hero-content">
-                <h1>Calebe Church</h1>
+                <img
+                src={logoCalebe}
+                alt="Logo Calebe Church"
+                className="hero-logo"
+                />
+                
 
                 <p>Perseverar em seguir ao Senhor</p>
 
-                <button>Venha nos Visitar</button>
+                <a href="#localizacao" className="hero-button">
+                    Venha nos Visitar
+                </a>
             </div>
         </section>
     )

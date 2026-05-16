@@ -9,9 +9,11 @@ function NAFSection() {
 
                     <h2>Núcleo de Acompanhamento Familiar</h2>
 
-                    <p>O Ministério NAF é responsável por cuidar, orientar e acompanhar famílias por meio de ações espirituais,
-                         sociais e educativas. Atuamos com amor, responsabilidade e sensibilidade, oferecendo suporte contínuo às
-                          famílias da igreja e da comunidade.</p>
+                    <p>O Ministério NAF é responsável por cuidar, orientar e acompanhar famílias 
+                        por meio de ações espirituais, sociais e educativas. Atuamos com amor, 
+                        responsabilidade e sensibilidade, oferecendo suporte contínuo às
+                        famílias da igreja e da comunidade.
+                    </p>
                 </div>
 
                 <div className="naf-grid">
@@ -49,7 +51,7 @@ function NAFSection() {
                 <div className="naf-courses">
                     <div className="naf-courses-header">
                         <span>🎓</span>
-                        <h3>Cursos Dísponiveis</h3>
+                        <h3>Cursos Dísponiveis:</h3>
                     </div>
 
                     <div className="naf-courses-grid">

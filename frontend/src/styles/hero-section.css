@@ -28,21 +28,23 @@
     margin-bottom: var(--space-lg);
 }
 
-.hero-content button {
+.hero-button {
+    display: inline-block;
+
     padding: var(--space-sm) var(--space-lg);
 
     border: none;
     border-radius: 8px;
 
     background-color: var(--color-secondary);
-
     color: var(--color-primary);
 
     font-size: var(--font-size-base);
     font-weight: bold;
 
-    cursor: pointer;
+    text-decoration: none;
 
+    cursor:pointer;
     transition: 0.3s;
 }
 
@@ -50,9 +52,24 @@
     opacity: 0.85;
 }
 
+.hero-logo {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: var(--space-lg);
+
+    opacity: 1;
+    filter: none;
+}
+
 @media (max-width: 768px) {
     .hero-section {
         min-height: 70vh;
+    }
+
+    .hero-logo{
+        width: 160px;
+        height: 160px;
     }
  
     .hero-content h1 {

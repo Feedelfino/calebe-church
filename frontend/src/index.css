@@ -89,16 +89,13 @@ button {
 }
 
 .container {
-  width: 100%;
+  width: min(100% -40px, var(--container-width));
 
-  max-width: var(--container-width);
-
-  margin: 0auto;
-
-  padding: 0 20px;
+  margin: 0 auto;
+  
 }
 
-@media (max-width:78px) {
+@media (max-width:768px) {
   :root {
     --section-padding: 64px 20px;
 

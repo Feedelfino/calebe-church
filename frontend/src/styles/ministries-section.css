@@ -1,5 +1,5 @@
 .ministries-section {
-    padding: var(--section-pading);
+    padding: var(--section-padding);
 
     background-color: var(--color-background);
 }
@@ -29,21 +29,32 @@
 
 .ministry-card {
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
+    min-height: 240px;
 
-    padding: var(--space-xl);
+    padding: var(--space-lg);
 
     border-radius: 16px;
+
     background-color: var(--color-white);
-    box-shadow: var(--shadow-card);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     text-align: left;
+
+    transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.ministry-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
 }
 
 .ministry-card h3 {
     margin-bottom: var(--space-md);
 
     color: var(--color-primary);
-
     font-size: var(--font-size-xl);
 }
 
@@ -59,5 +70,6 @@
     }
     .ministry-card {
         max-width: 100%;
+        min-height: auto;
     }
 }
