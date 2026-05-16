@@ -8,317 +8,28 @@ Calebe Church — Site Institucional Full-Stack
 
 # 1. Objetivo do Documento
 
-Este documento define a estrutura inicial dos wireframes e da prototipação visual da aplicação Calebe Church.
+Este documento define:
+- wireframes;
+- estrutura visual;
+- referências de interface;
+- direção de layout;
+- organização visual do frontend.
 
-O objetivo é organizar visualmente a interface antes do desenvolvimento do frontend, garantindo clareza estrutural, boa experiência do usuário e alinhamento com a direção visual do projeto.
-
----
-
-# 2. Objetivo da Prototipação
-
-A prototipação deverá permitir:
-
-- visualização da interface;
-- organização das seções;
-- validação visual;
-- planejamento da experiência do usuário;
-- preparação para desenvolvimento React;
-- definição da hierarquia visual.
+O objetivo é garantir consistência visual entre:
+- Figma;
+- prototipação;
+- frontend React;
+- Design System oficial.
 
 ---
 
-# 3. Estrutura Inicial das Telas
+# 2. Estrutura Inicial do Wireframe
 
-Estrutura inicial prevista:
-
-```txt
-Home
-Sobre
-Cultos
-Ministérios
-NAF
-Contato
-```
-
----
-
-# 4. Estrutura Inicial da Home
-
-A Home será a principal tela institucional do projeto.
-
-Estrutura prevista:
-
-```txt
-Navbar
-Hero Section
-Sobre
-Cultos
-Ministérios
-NAF
-Redes Sociais
-Localização
-Footer
-```
-
----
-
-# 5. Estrutura da Navbar
-
-Elementos previstos:
-
-- logo da igreja;
-- links de navegação;
-- botão de redes sociais;
-- menu mobile.
-
-Itens previstos:
-
-```txt
-Home
-Sobre
-Cultos
-Ministérios
-NAF
-Contato
-Instagram
-YouTube
-```
-
----
-
-# 6. Estrutura da Hero Section
-
-Objetivo:
-
-Criar o primeiro impacto visual da aplicação.
-
-Elementos previstos:
-
-- imagem de fundo;
-- logo da igreja;
-- slogan;
-- chamada principal;
-- botão de visita.
-
-Texto principal:
-
-```txt
-Perseverar em seguir ao Senhor
-```
-
----
-
-# 7. Estrutura da Seção Sobre
-
-Objetivo:
-
-Apresentar institucionalmente a Calebe Church.
-
-Conteúdo previsto:
-
-- visão;
-- propósito;
-- acolhimento;
-- identidade espiritual;
-- comunhão.
-
----
-
-# 8. Estrutura da Seção Cultos
-
-Objetivo:
-
-Exibir horários dos cultos da igreja.
-
-Cultos previstos:
-
-```txt
-Domingo — 18h
-Comunhão ao Senhor
-
-Quarta-feira — 20h
-Noite de Conquista
-```
-
----
-
-# 9. Estrutura da Seção Ministérios
-
-Objetivo:
-
-Apresentar os ministérios da igreja.
-
-Ministérios previstos:
-
-- Mulheres Determinadas
-- Teleios
-- Homens Calebe
-- Ministério de Intercessão
-- Calebe Worship
-- Calebinhos
-- Calebe Dance
-- Escola Bíblica
-- NAF
-
----
-
-# 10. Estrutura da Seção NAF
-
-Objetivo:
-
-Apresentar os projetos sociais e familiares.
-
-Frentes previstas:
-
-- acompanhamento familiar;
-- cursos e capacitações;
-- aconselhamento pastoral;
-- assistência social.
-
----
-
-# 11. Estrutura da Seção Redes Sociais
-
-Objetivo:
-
-Direcionar usuários para os canais oficiais da igreja.
-
-Redes previstas:
-
-- Instagram;
-- YouTube.
-
----
-
-# 12. Estrutura da Seção Localização
-
-Objetivo:
-
-Facilitar visitas presenciais.
-
-Conteúdo previsto:
-
-- endereço;
-- mapa;
-- botão de rota.
-
-Endereço:
-
-```txt
-Avenida Etiópia, 443
-Vila Morellato — Barueri/SP
-```
-
----
-
-# 13. Estrutura do Footer
-
-Conteúdo previsto:
-
-- logo;
-- slogan;
-- endereço;
-- horários;
-- redes sociais;
-- direitos reservados.
-
----
-
-# 14. Estratégia Visual do Wireframe
-
-O wireframe deverá priorizar:
-
-- organização visual;
-- hierarquia clara;
-- leitura simples;
-- alinhamento consistente;
-- espaçamento adequado;
-- navegação intuitiva.
-
----
-
-# 15. Estratégia Mobile First
-
-A prototipação deverá iniciar pelo mobile.
-
-Responsividade prevista para:
-
-- celulares;
-- tablets;
-- desktops.
-
----
-
-# 16. Estrutura Inicial do Grid
-
-Estrutura visual prevista:
-
-- grid responsivo;
-- alinhamento consistente;
-- espaçamentos padronizados;
-- adaptação para múltiplas telas.
-
----
-
-# 17. Estrutura Inicial dos Componentes
-
-Componentes previstos:
+Estrutura prevista inicialmente:
 
 ```txt
 Navbar
 HeroSection
-SectionTitle
-ServiceCard
-MinistryCard
-NAFCard
-SocialButton
-MapSection
-Footer
-```
-
----
-
-# 18. Estratégia de UX
-
-A experiência do usuário deverá priorizar:
-
-- clareza visual;
-- facilidade de navegação;
-- acesso rápido às informações;
-- leitura confortável;
-- experiência fluida em dispositivos móveis.
-
----
-
-# 19. Estratégia de UI
-
-A interface deverá manter:
-
-- consistência visual;
-- identidade institucional;
-- harmonia visual;
-- contraste adequado;
-- equilíbrio entre texto e imagem.
-
----
-
-# 20. Preparação para o Figma
-
-Este documento servirá como base para:
-
-- wireframes;
-- protótipos de alta fidelidade;
-- design system;
-- componentes visuais;
-- organização visual do frontend React.
-
----
-
-# 21. Resumo da Estrutura Visual
-
-```txt
-Navbar
-Hero Section
 Sobre
 Cultos
 Ministérios
@@ -327,3 +38,165 @@ Redes Sociais
 Localização
 Footer
 ```
+
+---
+
+# 3. Estratégia de Prototipação
+
+O frontend deverá seguir:
+- componentização;
+- Design System oficial;
+- layout responsivo;
+- identidade institucional moderna;
+- reutilização de padrões visuais.
+
+---
+
+# 4. Direção Visual Geral
+
+O projeto utiliza:
+
+```txt
+Azul escuro
+Dourado
+Branco
+```
+
+Características visuais:
+- institucional;
+- moderno;
+- elegante;
+- acolhedor;
+- espiritual;
+- minimalista;
+- responsivo.
+
+---
+
+# 5. Estrutura Visual das Seções
+
+## HeroSection
+
+Objetivo:
+- gerar impacto visual inicial;
+- destacar identidade da igreja;
+- reforçar propósito institucional;
+- direcionar navegação inicial.
+
+Referência visual:
+
+![HeroSection](./assets/wireframes/home-calebe-church-figma.png)
+
+---
+
+## SobreSection
+
+Objetivo:
+- apresentar missão da igreja;
+- contextualizar visitantes;
+- reforçar identidade institucional.
+
+Referência visual:
+
+![Sobre](./assets/wireframes/sobre-figma-calebe-church.png)
+
+---
+
+## NAF Section
+
+Objetivo:
+- transmitir acolhimento;
+- destacar suporte familiar;
+- reforçar impacto social e espiritual.
+
+Referências visuais:
+
+![NAF 01](./assets/wireframes/naf-pag1.png)
+
+![NAF 02](./assets/wireframes/naf-pag2.png)
+
+---
+
+## Ministérios Section
+
+Objetivo:
+- apresentar áreas da igreja;
+- incentivar participação;
+- reforçar senso de comunidade.
+
+Referências visuais:
+
+![Ministérios 01](./assets/wireframes/nossos-ministerios-pag1-figma.png)
+
+![Ministérios 02](./assets/wireframes/nossos-ministerios-pag2-figma.png)
+
+---
+
+## Redes Sociais
+
+Objetivo:
+- conectar visitantes aos canais oficiais;
+- incentivar engajamento digital;
+- fortalecer presença online.
+
+Referência visual:
+
+![Mídias](./assets/wireframes/midias-figma.png)
+
+---
+
+## Localização
+
+Objetivo:
+- facilitar visitas presenciais;
+- exibir endereço e horários;
+- integrar acesso ao Google Maps.
+
+Referência visual:
+
+![Localização](./assets/wireframes/nossa-localizacao.png)
+
+---
+
+## Footer
+
+Objetivo:
+- consolidar navegação final;
+- reforçar identidade institucional;
+- apresentar informações rápidas.
+
+Referência visual:
+
+![Footer](./assets/wireframes/part-final.png)
+
+---
+
+# 6. Responsividade
+
+O frontend deverá possuir:
+- adaptação para mobile;
+- adaptação para tablet;
+- grids responsivos;
+- tipografia adaptativa;
+- espaçamento proporcional.
+
+---
+
+# 7. Relação com o Frontend
+
+As referências visuais documentadas neste arquivo deverão orientar:
+- implementação React;
+- componentização;
+- estilização CSS;
+- evolução visual futura.
+
+---
+
+# 8. Relação com o Design System
+
+Todas as implementações deverão seguir:
+- tokens globais;
+- tipografia oficial;
+- spacing oficial;
+- cores oficiais;
+- breakpoints definidos no Design System.

@@ -59,7 +59,7 @@ Status: ✅ Concluído
 
 ## Fase 2 — Frontend Institucional
 
-Status: 🟡 Em andamento
+Status: Status: ✅ Concluído
 
 ### Objetivos
 - construção da HomePage;
@@ -68,15 +68,18 @@ Status: 🟡 Em andamento
 - responsividade;
 - refinamento visual.
 
-### Entregas previstas
-- Navbar;
-- HeroSection;
-- AboutSection;
-- Ministérios;
-- Cultos;
-- NAF;
-- Footer;
-- responsividade mobile.
+### Entregas concluídas
+- Navbar
+- HeroSection
+- AboutSection
+- ServicesSection
+- MinistriesSection
+- NAFSection
+- SocialMediaSection
+- LocationSection
+- Footer
+- Responsividade mobile
+- Refinamento visual final
 
 ---
 
@@ -172,21 +175,25 @@ Critério de cálculo:
 
 ```txt
 Percentual = entregáveis concluídos / total de entregáveis planejados
+```
 
+```txt
 [x] Navbar
 [x] HeroSection
 [x] AboutSection
 [x] ServicesSection
 [x] MinistriesSection
 [x] Footer
-[ ] NAFSection
-[ ] SocialMediaSection
-[ ] LocationSection
-[ ] Responsividade mobile
-[ ] Refinamento visual final
+[x] NAFSection
+[x] SocialMediaSection
+[x] LocationSection
+[x] Responsividade mobile
+[x] Refinamento visual final
+```
+
 ```txt
-Concluído: 6/11
-Frontend: 54%
+Concluído: 11/11
+Frontend institucional: 100%
 ```
 
 ## Backend
@@ -204,7 +211,7 @@ Frontend: 54%
 ## QA
 
 ```txt
-5%
+20%
 ```
 
 ## Deploy
@@ -217,9 +224,24 @@ Frontend: 54%
 
 # 5. Progresso Geral Estimado
 
+Critério de cálculo:
+
 ```txt
-Progresso geral: 40%
-Falta estimada: 60%
+O progresso geral considera:
+- frontend;
+- backend;
+- banco de dados;
+- QA;
+- documentação;
+- responsividade;
+- deploy;
+- arquitetura;
+- funcionalidades planejadas.
+```
+
+```txt
+Progresso geral: 55%
+Falta estimada: 45%
 ```
 
 ---
@@ -229,31 +251,48 @@ Falta estimada: 60%
 ## Frontend
 - Navbar
 - HeroSection
-- Sistema global de estilos
-- Variáveis CSS
-- Container global
-- Estrutura React inicial
 - AboutSection
 - ServicesSection
 - MinistriesSection
 - Footer institucional
+- NAFSection
+- Seção de cursos gratuitos do NAF
+- Sistema global de estilos
+- Variáveis CSS
+- Tokens do Design System
+- Container global
+- Estrutura React inicial
+- Responsividade inicial em seções principais
+- Navegação por âncoras iniciada
+- SocialMediaSection
+- LocationSection
+- Footer completo
+- Responsividade mobile
+- Integração Google Maps
+- Integração com Instagram e YouTube
+- Refinamento visual institucional
 
 ## Estrutura
 - Git
 - GitHub
 - CHANGELOG
+- Roadmap
 - Documentação técnica
 - Organização de pastas
+- Assets visuais do Figma organizados
+- Referências visuais oficiais documentadas
+- Documento de Segurança e LGPD
+- ADR no documento de arquitetura
 
 ---
 
 # 7. Próximos Passos Imediatos
 
-- Criar NAFSection
 - Criar SocialMediaSection
 - Criar LocationSection
-- Implementar responsividade mobile
+- Finalizar responsividade mobile
 - Refinar visual final da HomePage
+- Integrar navegação completa entre seções
 
 ---
 

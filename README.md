@@ -88,6 +88,7 @@ Documentos atuais:
 08 — Organização do Arquivo Figma
 09 — Análise do Protótipo Figma Make
 10 — Roadmap e Status do Projeto
+11 — Segurança e LGPD
 ```
 ---
 
@@ -107,20 +108,25 @@ O CHANGELOG registra:
 
 ---
 
-## Funcionalidades Planejadas
+## Funcionalidades Implementadas
 
-### Primeira versão
+### Frontend Institucional
 
-- Home institucional
-- Seção sobre a igreja
-- Horários dos cultos
-- Seção de ministérios
-- Seção do NAF
-- Localização
-- Links para Instagram e YouTube
-- Layout responsivo
+- Navbar com navegação por âncoras
+- HeroSection com logo oficial
+- AboutSection institucional
+- ServicesSection com horários de cultos
+- MinistriesSection
+- NAFSection com cursos gratuitos
+- SocialMediaSection com Instagram e YouTube
+- LocationSection com Google Maps
+- Footer institucional completo
+- Responsividade mobile
+- Refinamento visual baseado no Figma
 
-### Versões futuras
+---
+
+## Funcionalidades Futuras
 
 - Backend com API REST
 - Banco de dados SQL
@@ -154,7 +160,14 @@ Institucional
 Acolhedora
 Espiritual
 ```
+## Referência Visual
 
+A interface do projeto foi construída com base em referências visuais criadas no Figma.
+
+As referências oficiais estão documentadas no:
+
+```txt
+Documento 07 — Estrutura de Wireframe e Prototipação
 ---
 
 ## Status do Projeto
@@ -163,28 +176,26 @@ Espiritual
 Documentação inicial: concluída
 Git local: configurado
 GitHub: configurado
-Frontend: estrutura inicial concluída
+Frontend institucional: concluído
 Backend: não iniciado
 Banco de dados: não iniciado
 Deploy: não iniciado
-```
 
 ---
 
 ## Progresso Estimado
 
 ```txt
-Documentação inicial: 90%
+Documentação: 100%
 Git/GitHub: 100%
-Figma/referência visual: 35%
-Frontend: 30%
+Frontend institucional: 100%
 Backend: 0%
 Banco de dados: 0%
-QA: 5%
+QA: 15%
 Deploy: 0%
 
-Progresso geral estimado: 28%
-Falta estimada: 72%
+Progresso geral estimado: 55%
+Falta estimada: 45%
 ```
 
 ---

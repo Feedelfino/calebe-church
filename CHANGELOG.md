@@ -159,3 +159,85 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 ### Frontend
 - Correção do token `--section-padding`
 - Correção estrutural do sistema global de estilos
+# [2026-05-15]
+
+## Added
+
+### Frontend
+- Criação da NAFSection
+- Implementação da seção de cursos gratuitos
+- Implementação de cards institucionais do NAF
+- Implementação da navegação por âncoras com IDs nas seções
+- Integração inicial da arquitetura visual baseada no Figma
+
+### Documentação
+- Adição das referências visuais oficiais no Documento 07
+- Organização dos assets visuais do frontend
+- Estruturação da biblioteca visual do projeto
+
+---
+
+## Changed
+
+### Frontend
+- Refatoração visual da NAFSection
+- Migração da estrutura interna do NAF para CSS Grid
+- Refinamento visual dos cards institucionais
+- Ajustes de responsividade da seção NAF
+- Aproximação visual do frontend ao novo protótipo Figma
+
+### Arquitetura
+- Integração entre frontend React e referências visuais documentadas
+
+---
+
+## Fixed
+
+### Frontend
+- Correção da classe `naf-grid`
+- Correção de inconsistência entre JSX e CSS
+- Correção de responsividade dos cards NAF
+- Correção de variáveis CSS incorretas
+- Correção de estrutura visual dos cursos gratuitos
+- Correção da navegação por âncoras do menu
+
+---
+
+# [2026-05-16]
+
+## Added
+
+### Frontend
+- Criação da SocialMediaSection
+- Criação da LocationSection
+- Integração do Google Maps na seção de localização
+- Implementação de links externos para Instagram e YouTube
+- Adição de ícones personalizados para redes sociais
+- Adição do logo oficial na HeroSection
+
+---
+
+## Changed
+
+### Frontend
+- Refinamento visual da HeroSection com uso do logo oficial
+- Refatoração visual da AboutSection para layout em duas colunas
+- Refinamento visual dos cards de cultos
+- Refinamento visual dos cards de ministérios
+- Refinamento visual da SocialMediaSection
+- Refatoração do Footer institucional
+- Ajustes finais de responsividade mobile
+- Ajustes globais de alinhamento e centralização de containers
+
+---
+
+## Fixed
+
+### Frontend
+- Correção da navegação do botão “Venha nos Visitar”
+- Correção do link “Contato” para direcionamento externo ao Instagram
+- Correção de imports e caminhos de assets
+- Correção de overflow horizontal causado por elementos largos
+- Correção de desalinhamento global da página
+- Correção de tipografia e quebras no mobile
+- Correção de espaçamentos e proporções dos cards
