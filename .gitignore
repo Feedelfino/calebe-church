@@ -1,0 +1,26 @@
+# =========================
+# FRONTEND
+# =========================
+
+frontend/node_modules
+frontend/dist
+
+# =========================
+# BACKEND
+# =========================
+
+backend/venv
+backend/__pycache__
+
+# =========================
+# SISTEMA OPERACIONAL
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# VS CODE
+# =========================
+
+.vscode

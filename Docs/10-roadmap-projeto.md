@@ -199,7 +199,17 @@ Frontend institucional: 100%
 ## Backend
 
 ```txt
-0%
+- Estrutura inicial criada
+- Ambiente virtual Python configurado
+- FastAPI instalado
+- Uvicorn configurado
+- Arquitetura backend definida
+- Primeira aplicação FastAPI criada
+- Endpoint GET `/`
+- Endpoint GET `/health`
+- Servidor backend funcionando localmente
+
+15%
 ```
 
 ## Banco de Dados

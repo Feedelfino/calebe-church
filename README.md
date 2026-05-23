@@ -168,7 +168,7 @@ As referências oficiais estão documentadas no:
 
 ```txt
 Documento 07 — Estrutura de Wireframe e Prototipação
----
+```
 
 ## Status do Projeto
 
