@@ -241,3 +241,39 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 - Correção de desalinhamento global da página
 - Correção de tipografia e quebras no mobile
 - Correção de espaçamentos e proporções dos cards
+
+# [2026-05-22]
+
+## Added
+
+- Estrutura inicial do backend criada
+- Ambiente virtual Python configurado
+- FastAPI instalado
+- Uvicorn instalado
+- Arquivo requirements.txt criado
+- Estrutura arquitetural backend criada
+- Pastas:
+  - app
+  - api
+  - routes
+  - core
+  - schemas
+  - models
+  - services
+  - database
+- Primeira aplicação FastAPI criada
+- Endpoint GET `/`
+- Endpoint GET `/health`
+- Servidor backend iniciado localmente
+- Arquivo `.gitignore` configurado
+
+## Changed
+
+- README atualizado para refletir o status real do projeto
+- Estrutura documental refinada
+- Separação entre funcionalidades implementadas e roadmap futuro
+
+## Fixed
+
+- Correção do markdown quebrado no README
+- Correção do rastreamento indevido do `venv`
