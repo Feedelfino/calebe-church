@@ -277,3 +277,47 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 
 - Correção do markdown quebrado no README
 - Correção do rastreamento indevido do `venv`
+
+# [2026-05-25]
+
+## Added
+
+- Estrutura inicial do backend criada
+- Ambiente virtual Python configurado
+- FastAPI instalado
+- Uvicorn configurado
+- Arquivo requirements.txt criado
+- Arquivo .gitignore configurado
+- Arquitetura backend inicial implementada
+- Estrutura de pastas backend criada:
+  - api
+  - routes
+  - schemas
+  - services
+  - models
+  - database
+  - core
+- Primeira aplicação FastAPI criada
+- Endpoint GET `/`
+- Endpoint GET `/health`
+- Endpoint GET `/cultos`
+- Swagger automático configurado
+- Schema `CultoResponse` implementado com Pydantic
+- Validação tipada de respostas implementada
+- Service Layer inicial implementada
+- Arquivo `culto_service.py` criado
+
+## Changed
+
+- Modularização das rotas da API
+- Refatoração da rota `/health`
+- Refatoração da rota `/cultos`
+- Separação de responsabilidades entre routes e services
+- README atualizado para refletir status real do backend
+
+## Fixed
+
+- Correção da estrutura do `.gitignore`
+- Correção da organização de rotas
+- Correção da documentação Swagger
+- Correção da tipagem `response_model`

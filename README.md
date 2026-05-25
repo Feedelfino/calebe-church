@@ -1,6 +1,6 @@
 # Calebe Church — Site Institucional Full-Stack
 
-Projeto full-stack institucional da Calebe Church, desenvolvido do zero com foco em aprendizado prático, documentação técnica, boas práticas de desenvolvimento, SEO, LGPD, QA e arquitetura moderna.
+Projeto full-stack institucional da Calebe Church, desenvolvido do zero com foco em aprendizado prático, arquitetura moderna, boas práticas de desenvolvimento, documentação técnica, SEO, LGPD, QA e construção de aplicações full-stack profissionais.
 
 ---
 
@@ -8,61 +8,93 @@ Projeto full-stack institucional da Calebe Church, desenvolvido do zero com foco
 
 A Calebe Church é uma igreja cristã localizada em Barueri/SP.
 
-Este projeto tem como objetivo criar um site institucional moderno, responsivo e otimizado para apresentar a igreja, divulgar os horários dos cultos, ministérios, ações do NAF, localização e canais oficiais de comunicação.
+Este projeto tem como objetivo desenvolver um site institucional moderno, responsivo e otimizado para apresentar a igreja, divulgar horários de cultos, ministérios, ações do NAF, localização e canais oficiais de comunicação.
 
-Além de atender a uma necessidade real, o projeto também será utilizado como estudo prático de desenvolvimento full-stack.
+Além de atender uma necessidade real, o projeto também está sendo utilizado como laboratório prático de aprendizado em desenvolvimento full-stack.
 
 ---
 
-## Objetivos do Site
+## Objetivos do Projeto
 
-O site deverá permitir que visitantes possam:
+O sistema deverá permitir que visitantes possam:
 
 - conhecer a Calebe Church;
-- consultar os horários dos cultos;
+- consultar horários dos cultos;
 - conhecer os ministérios;
-- conhecer o NAF — Núcleo de Acompanhamento Familiar;
-- acessar as redes sociais oficiais;
+- acessar informações do NAF — Núcleo de Acompanhamento Familiar;
+- acessar redes sociais oficiais;
 - localizar a igreja;
 - planejar uma visita presencial.
 
+Futuramente o sistema também contará com:
+
+- painel administrativo;
+- gerenciamento de conteúdos;
+- autenticação;
+- integração com banco de dados;
+- APIs REST completas.
+
 ---
 
-## Tecnologias Previstas
+# Tecnologias Utilizadas
 
-### Frontend
+## Frontend
 
 - React
 - TypeScript
 - Vite
 
-### Backend
+## Backend
 
 - Python
 - FastAPI
+- Pydantic
+- Uvicorn
 
-### Banco de Dados
+## Banco de Dados
 
-- SQLite no desenvolvimento
-- PostgreSQL futuramente em produção
+- SQLite (desenvolvimento)
+- PostgreSQL (produção futuramente)
 
-### Ferramentas
+## Ferramentas
 
 - Git
 - GitHub
 - VS Code
 - Figma
+- Swagger/OpenAPI
 - Postman ou Insomnia
 
 ---
 
-## Estrutura Inicial do Projeto
+# Estrutura Atual do Projeto
 
 ```txt
 calebe-church/
 │
 ├── backend/
+│   │
+│   ├── app/
+│   │   ├── api/
+│   │   │   └── routes/
+│   │   │       ├── health.py
+│   │   │       └── cultos.py
+│   │   │
+│   │   ├── schemas/
+│   │   │   └── culto.py
+│   │   │
+│   │   ├── services/
+│   │   │   └── culto_service.py
+│   │   │
+│   │   ├── models/
+│   │   ├── database/
+│   │   └── core/
+│   │
+│   ├── requirements.txt
+│   
+│
 ├── frontend/
+│
 ├── Docs/
 ├── Diagramas/
 ├── CHANGELOG.md
@@ -71,11 +103,39 @@ calebe-church/
 
 ---
 
-## Documentação do Projeto
+# Como Executar o Frontend
 
-A documentação técnica e estratégica está localizada na pasta `Docs`.
+```bash
+cd frontend
 
-Documentos atuais:
+npm install
+
+npm run dev
+```
+
+---
+
+# Como Executar o Backend
+
+```bash
+cd backend
+
+venv\Scripts\activate
+
+uvicorn app.main:app --reload
+```
+
+---
+
+# Documentação do Projeto
+
+A documentação técnica e estratégica está localizada na pasta:
+
+```txt
+Docs/
+```
+
+## Documentos atuais
 
 ```txt
 01 — Briefing Técnico e Criativo
@@ -90,27 +150,30 @@ Documentos atuais:
 10 — Roadmap e Status do Projeto
 11 — Segurança e LGPD
 ```
+
 ---
 
-## Histórico do Projeto
+# Histórico do Projeto
 
-O histórico técnico e evolutivo do projeto está documentado no arquivo:
+O histórico técnico e evolutivo do projeto está documentado em:
 
 ```txt
 CHANGELOG.md
 ```
 
 O CHANGELOG registra:
+
 - funcionalidades adicionadas;
 - mudanças estruturais;
 - correções;
-- evolução técnica do projeto.
+- evolução arquitetural;
+- evolução backend e frontend.
 
 ---
 
-## Funcionalidades Implementadas
+# Funcionalidades Implementadas
 
-### Frontend Institucional
+## Frontend Institucional
 
 - Navbar com navegação por âncoras
 - HeroSection com logo oficial
@@ -123,27 +186,96 @@ O CHANGELOG registra:
 - Footer institucional completo
 - Responsividade mobile
 - Refinamento visual baseado no Figma
+- Design System baseado em tokens globais
 
 ---
 
-## Funcionalidades Futuras
+# Backend Atual
 
-- Backend com API REST
-- Banco de dados SQL
+O backend está sendo desenvolvido com FastAPI seguindo arquitetura em camadas.
+
+## Implementado atualmente
+
+- FastAPI configurado
+- Uvicorn configurado
+- Estrutura backend modular
+- APIRouter implementado
+- Swagger/OpenAPI automático
+- Endpoint GET `/`
+- Endpoint GET `/health`
+- Endpoint GET `/cultos`
+- Schemas Pydantic
+- Response Models tipados
+- Service Layer inicial
+- Arquitetura preparada para SQLite
+
+---
+
+# Endpoints Atuais da API
+
+| Método | Endpoint | Descrição |
+|---|---|---|
+| GET | `/` | Verificação inicial da API |
+| GET | `/health` | Health Check |
+| GET | `/cultos` | Lista de cultos |
+
+---
+
+# Funcionalidades Futuras
+
+- Integração com SQLite
+- Integração com PostgreSQL
+- CRUD completo de cultos
+- CRUD de ministérios
+- CRUD de eventos
 - Formulário de contato
 - Painel administrativo
-- Gerenciamento de eventos
-- Gerenciamento de ministérios
-- Autenticação
+- Sistema de autenticação
+- Controle de permissões
 - Deploy em produção
+- Integração frontend/backend
+- Consumo de APIs no frontend
 
 ---
 
-## Identidade Visual
+# Arquitetura Backend
 
-A identidade visual do projeto será baseada no logo oficial da Calebe Church.
+O backend segue arquitetura em camadas para facilitar manutenção, escalabilidade e separação de responsabilidades.
 
-Paleta principal:
+## Estrutura de responsabilidades
+
+| Camada | Responsabilidade |
+|---|---|
+| Routes | Endpoints HTTP |
+| Schemas | Validação e tipagem |
+| Services | Regras de negócio |
+| Models | Entidades do banco |
+| Database | Conexão SQL |
+| Core | Configurações centrais |
+
+---
+
+# Fluxo Arquitetural
+
+```txt
+Frontend React
+        ↓
+FastAPI Routes
+        ↓
+Services
+        ↓
+Database
+        ↓
+SQLite/PostgreSQL
+```
+
+---
+
+# Identidade Visual
+
+A identidade visual do projeto é baseada no logo oficial da Calebe Church.
+
+## Paleta principal
 
 ```txt
 Azul escuro
@@ -151,7 +283,7 @@ Dourado
 Branco
 ```
 
-Direção visual:
+## Direção visual
 
 ```txt
 Moderna
@@ -160,7 +292,10 @@ Institucional
 Acolhedora
 Espiritual
 ```
-## Referência Visual
+
+---
+
+# Referência Visual
 
 A interface do projeto foi construída com base em referências visuais criadas no Figma.
 
@@ -170,42 +305,69 @@ As referências oficiais estão documentadas no:
 Documento 07 — Estrutura de Wireframe e Prototipação
 ```
 
-## Status do Projeto
+---
+
+# Status do Projeto
 
 ```txt
 Documentação inicial: concluída
 Git local: configurado
 GitHub: configurado
 Frontend institucional: concluído
-Backend: não iniciado
+Backend FastAPI: em desenvolvimento
+Rotas iniciais da API: implementadas
+Arquitetura backend: implementada
+Swagger/OpenAPI: funcionando
 Banco de dados: não iniciado
 Deploy: não iniciado
+```
 
 ---
 
-## Progresso Estimado
+# Progresso Estimado
 
 ```txt
 Documentação: 100%
 Git/GitHub: 100%
 Frontend institucional: 100%
-Backend: 0%
+Backend: 30%
 Banco de dados: 0%
-QA: 15%
+QA: 20%
 Deploy: 0%
 
-Progresso geral estimado: 55%
-Falta estimada: 45%
+Progresso geral estimado: 65%
+Falta estimada: 35%
 ```
 
 ---
 
-## Autor
+# Objetivos Técnicos do Projeto
 
-Desenvolvido por Felipe Delfino como projeto prático de estudo, portfólio e desenvolvimento full-stack.
+Além do produto final, este projeto possui foco educacional e arquitetural.
+
+## Objetivos de aprendizado
+
+- Desenvolvimento Full-Stack
+- Arquitetura Frontend
+- Arquitetura Backend
+- APIs REST
+- FastAPI
+- TypeScript
+- Organização profissional de projetos
+- Git Flow
+- Documentação técnica
+- Boas práticas de mercado
+- SQL e persistência de dados
+- QA e validação
 
 ---
 
-## Licença
+# Autor
+
+Desenvolvido por Felipe Delfino como projeto prático de estudo, portfólio e evolução profissional em desenvolvimento full-stack.
+
+---
+
+# Licença
 
 Este projeto está em desenvolvimento e ainda não possui licença definida.

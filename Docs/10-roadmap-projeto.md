@@ -199,17 +199,20 @@ Frontend institucional: 100%
 ## Backend
 
 ```txt
-- Estrutura inicial criada
-- Ambiente virtual Python configurado
-- FastAPI instalado
+Backend:
+- Estrutura arquitetural backend criada
+- FastAPI configurado
 - Uvicorn configurado
-- Arquitetura backend definida
-- Primeira aplicação FastAPI criada
-- Endpoint GET `/`
-- Endpoint GET `/health`
-- Servidor backend funcionando localmente
+- Rotas modularizadas
+- APIRouter implementado
+- Swagger automático funcionando
+- Endpoint `/health` implementado
+- Endpoint `/cultos` implementado
+- Schemas Pydantic implementados
+- Service Layer inicial implementada
+- Preparação para integração com SQLite
 
-15%
+30%
 ```
 
 ## Banco de Dados
@@ -250,8 +253,8 @@ O progresso geral considera:
 ```
 
 ```txt
-Progresso geral: 55%
-Falta estimada: 45%
+Progresso geral: 65%
+Falta estimada: 35%
 ```
 
 ---
