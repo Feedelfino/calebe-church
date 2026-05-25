@@ -1,5 +1,9 @@
 from fastapi import FastAPI
 
+from app.api.routes import health, cultos
+
+
+
 app = FastAPI( 
     title="Calebe Church API",
     description="API institucional da Calebe Church",
@@ -12,9 +16,7 @@ def read_root():
         "message": "API Calebe Funcionando"
 
     } 
-@app.get("/health")
-def health_check():
-    return {
-        "status": "ok",
-        "message": "Backend ativo"
-    }
+
+
+app.include_router(health.router)
+app.include_router(cultos.router)
