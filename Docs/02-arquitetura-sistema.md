@@ -149,6 +149,26 @@ Backend responde em JSON
         ↓
 Frontend exibe dados na interface
 ```
+## Persistência de Dados
+
+O backend agora utiliza SQLite como banco de dados relacional local durante o desenvolvimento.
+
+Estrutura atual:
+
+Frontend React
+↓
+FastAPI Routes
+↓
+Services
+↓
+SQLite Database
+
+O projeto já possui:
+- conexão SQLite;
+- criação automática de tabelas;
+- persistência real de dados;
+- leitura e inserção via API REST.
+
 
 ---
 

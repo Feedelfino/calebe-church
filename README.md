@@ -208,6 +208,10 @@ O backend está sendo desenvolvido com FastAPI seguindo arquitetura em camadas.
 - Response Models tipados
 - Service Layer inicial
 - Arquitetura preparada para SQLite
+- SQLite integrado
+- Persistência real de dados
+- Endpoint POST `/cultos`
+- Integração SQL com FastAPI
 
 ---
 
@@ -217,13 +221,13 @@ O backend está sendo desenvolvido com FastAPI seguindo arquitetura em camadas.
 |---|---|---|
 | GET | `/` | Verificação inicial da API |
 | GET | `/health` | Health Check |
-| GET | `/cultos` | Lista de cultos |
+| GET | `/cultos` | Lista cultos persistidos |
+| POST | `/cultos` | Cria novo culto |
 
 ---
 
 # Funcionalidades Futuras
 
-- Integração com SQLite
 - Integração com PostgreSQL
 - CRUD completo de cultos
 - CRUD de ministérios
@@ -318,7 +322,8 @@ Backend FastAPI: em desenvolvimento
 Rotas iniciais da API: implementadas
 Arquitetura backend: implementada
 Swagger/OpenAPI: funcionando
-Banco de dados: não iniciado
+Banco de dados SQLite: implementado
+Persistência backend: funcionando
 Deploy: não iniciado
 ```
 
@@ -330,13 +335,13 @@ Deploy: não iniciado
 Documentação: 100%
 Git/GitHub: 100%
 Frontend institucional: 100%
-Backend: 30%
-Banco de dados: 0%
-QA: 20%
+Backend: 50%
+Banco de dados: 35%
+QA: 25%
 Deploy: 0%
 
-Progresso geral estimado: 65%
-Falta estimada: 35%
+Progresso geral estimado: 72%
+Falta estimada: 28%
 ```
 
 ---
