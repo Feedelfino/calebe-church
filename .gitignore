@@ -9,8 +9,9 @@ frontend/dist
 # BACKEND
 # =========================
 
-backend/venv
-backend/__pycache__
+backend/venv/
+__pycache__/
+*.pyc
 
 # =========================
 # SISTEMA OPERACIONAL
