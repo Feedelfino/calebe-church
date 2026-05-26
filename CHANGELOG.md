@@ -321,3 +321,35 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 - Correção da organização de rotas
 - Correção da documentação Swagger
 - Correção da tipagem `response_model`
+
+# [2026-05-26]
+
+## Added
+
+- Configuração inicial do SQLite
+- Arquivo `database.py` criado
+- Arquivo `init_db.py` criado
+- Banco de dados `calebe_church.db` criado
+- Tabela `cultos` implementada
+- Seed inicial de cultos implementada
+- Persistência SQLite funcional
+- Integração entre FastAPI e SQLite
+- Endpoint `POST /cultos` implementado
+- Inserção de dados via API REST
+- Validação de entrada com Pydantic
+- Schema `CultoCreate` implementado
+- Fluxo completo de persistência backend implementado
+
+## Changed
+
+- Refatoração do `culto_service.py`
+- Substituição de dados mockados por dados persistidos no SQLite
+- Endpoint `GET /cultos` agora consome dados reais do banco
+- Estrutura backend preparada para CRUD completo
+
+## Fixed
+
+- Correções de SQL no `init_db.py`
+- Correções de conexão SQLite
+- Correções de escopo no `culto_service.py`
+- Correções de tipagem e validação no Swagger
