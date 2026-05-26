@@ -207,12 +207,17 @@ Backend:
 - APIRouter implementado
 - Swagger automático funcionando
 - Endpoint `/health` implementado
-- Endpoint `/cultos` implementado
+- Endpoint `GET /cultos` implementado
+- Endpoint `POST /cultos` implementado
 - Schemas Pydantic implementados
-- Service Layer inicial implementada
-- Preparação para integração com SQLite
+- Response Models implementados
+- Service Layer implementada
+- SQLite integrado
+- Persistência real de dados implementada
+- Integração SQL com FastAPI funcional
+- Seed inicial de banco implementada
 
-30%
+50%
 ```
 
 ## Banco de Dados
