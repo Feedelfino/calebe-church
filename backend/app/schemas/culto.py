@@ -1,10 +1,16 @@
 from pydantic import BaseModel
 
+
 class CultoCreate(BaseModel):
-    nome: str
+    titulo: str
+    dia_semana: str
     horario: str
+    descricao: str
 
 class CultoResponse(BaseModel):
     id: int
-    nome: str
+    titulo: str
+    dia_semana: str
     horario: str
+    descricao: str
+   

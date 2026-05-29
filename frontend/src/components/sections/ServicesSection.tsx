@@ -1,39 +1,49 @@
-import "../../styles/services-section.css"
+import { useEffect, useState } from "react";
+import "../../styles/services-section.css";
+
+import { buscarCultos } from "../../services/cultosService";
+import type { Culto } from "../../services/cultosService";
 
 function ServicesSection() {
-    return(
-        <section id="services" className="services-section">
-            <div className="container services-container">
-                <h2>Horários dos cultos</h2>
+  const [cultos, setCultos] = useState<Culto[]>([]);
 
-                <div className="services-grid">
-                    <article className="service-card">
-                        <span>Domingo - 08:00</span>
-                        <h3>Escola Biblica</h3>
-                        <p>Encontre sabedoria e mude sua vida. Comece seu estudo bíblico!</p>
-                    </article>
-                    
-                    <article className="service-card">
-                        <span> Domingo - 10:00</span>
-                        <h3>Comunhão ao Senhor</h3>
-                        <p>Um tempo de adoração, Palavra e comunhão para toda a família.
+  useEffect(() => {
+    async function carregarCultos() {
+      try {
+        const dados = await buscarCultos();
 
-                        </p>
-                    </article>
+        console.log("Cultos recebidos da API:", dados);
 
-                    <article className="service-card">
-                    <span>Quarta-feira - 20:00</span>
-                    <h3>Noite de Conquista</h3>
-                    <p>
-                        Um tempo dedicado á busca pela presença de Deus, fortalecimento da
-                        fé e renovação espiritual.
-                    </p>
-                    </article>
-                </div>
-            </div>
-        </section>  
-    )
+        setCultos(dados);
+      } catch (error) {
+        console.error("Erro ao carregar cultos:", error);
+      }
+    }
 
+    carregarCultos();
+  }, []);
+
+  return (
+    <section id="services" className="services-section">
+      <div className="container services-container">
+        <h2>Horários dos cultos</h2>
+
+        <div className="services-grid">
+          {cultos.map((culto) => (
+            <article className="service-card" key={culto.id}>
+              <span>
+                {culto.dia_semana} - {culto.horario}
+              </span>
+
+              <h3>{culto.titulo}</h3>
+
+              <p>{culto.descricao}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default ServicesSection;

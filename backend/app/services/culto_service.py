@@ -5,7 +5,7 @@ def listar_cultos():
     cursor = connection.cursor()
 
     cursor.execute("""
-                   SELECT id, nome, horario
+                   SELECT id, titulo, dia_semana, horario, descricao
                    FROM cultos
                    ORDER BY id
     """)
@@ -16,15 +16,19 @@ def listar_cultos():
 
     return [dict(culto) for culto in cultos]
 
-
 def criar_culto(culto):
     connection = get_connection()
     cursor = connection.cursor()
 
     cursor.execute("""
-            INSERT INTO cultos (nome, horario)
-            VALUES(?, ?)
-        """,(culto.nome, culto.horario))
+        INSERT INTO cultos (titulo, dia_semana, horario, descricao)
+        VALUES (?, ?, ?, ?)
+    """, (
+        culto.titulo,
+        culto.dia_semana,
+        culto.horario,
+        culto.descricao
+    ))
 
     connection.commit()
 
@@ -33,8 +37,9 @@ def criar_culto(culto):
     connection.close()
 
     return {
-            "id": novo_id,
-            "nome": culto.nome,
-            "horario": culto.horario
+        "id": novo_id,
+        "titulo": culto.titulo,
+        "dia_semana": culto.dia_semana,
+        "horario": culto.horario,
+        "descricao": culto.descricao
     }
-

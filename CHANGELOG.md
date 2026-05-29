@@ -353,3 +353,28 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 - Correções de conexão SQLite
 - Correções de escopo no `culto_service.py`
 - Correções de tipagem e validação no Swagger
+
+# [2026-05-29]
+
+## Added
+
+* Arquivo `cultosService.ts` criado para centralizar o consumo da API de cultos
+* Integração da seção `ServicesSection` com a API FastAPI
+* Implementação de `useState` para gerenciamento dos cultos recebidos da API
+* Implementação de `useEffect` para carregamento automático dos cultos ao iniciar a página
+* Renderização dinâmica dos cards de cultos utilizando dados persistidos no banco SQLite
+
+## Changed
+
+* Removidos os cards hardcoded da seção de cultos
+* Seção `ServicesSection` agora consome dados da rota `GET /cultos`
+* Componente atualizado para exibir informações dinâmicas vindas do backend
+
+## Fixed
+
+* Correção do tipo `Culto` no frontend para refletir o schema da API
+* Correção do caminho de importação do `cultosService`
+* Correção da configuração de CORS entre FastAPI e React
+* Correção da URL de consumo da API de cultos
+* Correção da renderização JSX do componente `ServicesSection`
+* Correção da ausência de `return` no componente React
