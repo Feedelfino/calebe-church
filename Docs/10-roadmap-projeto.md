@@ -85,7 +85,7 @@ Status: Status: ✅ Concluído
 
 ## Fase 3 — Backend e APIs
 
-Status: ⚪ Não iniciado
+Status: 🟡 Em andamento
 
 ### Objetivos
 - criação da API REST;
@@ -103,16 +103,23 @@ Status: ⚪ Não iniciado
 
 ## Fase 4 — Banco de Dados
 
-Status: ⚪ Não iniciado
+Status: 🟡 Em andamento
 
 ### Objetivos
 - modelagem SQL;
 - persistência de dados;
 - integração com backend.
 
+### Entregas concluídas
+- SQLite configurado;
+- banco `calebe_church.db` criado;
+- tabela `cultos` implementada;
+- persistência de dados implementada;
+- integração SQLite + FastAPI concluída;
+- seed inicial de banco implementada.
+
 ### Entregas previstas
-- SQLite;
-- tabelas institucionais;
+- tabelas institucionais adicionais;
 - armazenamento de contatos;
 - estrutura preparada para PostgreSQL.
 
@@ -120,7 +127,7 @@ Status: ⚪ Não iniciado
 
 ## Fase 5 — QA e Segurança
 
-Status: ⚪ Não iniciado
+Status: 🟡 Em andamento
 
 ### Objetivos
 - validações;
@@ -134,6 +141,13 @@ Status: ⚪ Não iniciado
 - testes de responsividade;
 - validação de formulários;
 - melhorias de acessibilidade.
+
+### Entregas concluídas
+- testes manuais do endpoint GET /cultos;
+- testes manuais do endpoint POST /cultos;
+- validação da persistência SQLite;
+- validação da integração frontend/backend;
+- validação da renderização dinâmica da seção de cultos.
 
 ---
 
@@ -216,20 +230,32 @@ Backend:
 - Persistência real de dados implementada
 - Integração SQL com FastAPI funcional
 - Seed inicial de banco implementada
+- FastAPI configurado
+- APIRouter implementado
+- Swagger funcionando
+- Endpoint GET /cultos implementado
+- Endpoint POST /cultos implementado
+- Integração frontend/backend concluída para cultos
+- Serviço `cultosService` implementado
+- Consumo da rota `GET /cultos` via React
+- useState implementado para gerenciamento dos cultos
+- useEffect implementado para carregamento automático
+- Renderização dinâmica dos cultos implementada
+- Configuração CORS implementada e validada
 
-50%
+70%
 ```
 
 ## Banco de Dados
 
 ```txt
-0%
+60%
 ```
 
 ## QA
 
 ```txt
-20%
+40%
 ```
 
 ## Deploy
@@ -258,8 +284,8 @@ O progresso geral considera:
 ```
 
 ```txt
-Progresso geral: 65%
-Falta estimada: 35%
+Progresso geral: 84%
+Falta estimada: 16%
 ```
 
 ---
@@ -302,15 +328,27 @@ Falta estimada: 35%
 - Documento de Segurança e LGPD
 - ADR no documento de arquitetura
 
+## Backend
+
+- FastAPI configurado
+- APIRouter implementado
+- Swagger funcionando
+- Endpoint GET /cultos
+- Endpoint POST /cultos
+- Integração SQLite
+- Persistência de dados
+- Configuração de CORS
+- Integração React ↔ FastAPI
+
 ---
 
 # 7. Próximos Passos Imediatos
 
-- Criar SocialMediaSection
-- Criar LocationSection
-- Finalizar responsividade mobile
-- Refinar visual final da HomePage
-- Integrar navegação completa entre seções
+- Implementar endpoint PUT /cultos
+- Implementar endpoint DELETE /cultos
+- Implementar tratamento visual de loading
+- Implementar tratamento visual de erro
+- Planejar módulo de eventos
 
 ---
 
