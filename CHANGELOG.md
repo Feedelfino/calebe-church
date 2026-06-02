@@ -378,3 +378,22 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 * Correção da URL de consumo da API de cultos
 * Correção da renderização JSX do componente `ServicesSection`
 * Correção da ausência de `return` no componente React
+
+
+# [2026-06-02]
+
+## Added
+
+* Tratamento de exceções utilizando HTTPException
+* Validação de existência de registros utilizando cursor.rowcount
+
+## Changed
+
+* Endpoint PUT /cultos agora valida a existência do registro antes da atualização
+* Endpoint DELETE /cultos agora valida a existência do registro antes da exclusão
+
+## Fixed
+
+* Correção do comportamento do PUT para IDs inexistentes
+* Correção do comportamento do DELETE para IDs inexistentes
+* Padronização da resposta HTTP 404 para cultos não encontrados

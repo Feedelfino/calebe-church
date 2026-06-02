@@ -1,4 +1,5 @@
 from app.database.database import get_connection
+from fastapi import HTTPException
 
 def listar_cultos():
     connection = get_connection()
@@ -30,16 +31,58 @@ def criar_culto(culto):
         culto.descricao
     ))
 
+def atualizar_culto(culto_id, culto):
+    connection = get_connection()
+    cursor = connection.cursor()
+
+    cursor.execute("""
+                   UPDATE cultos
+                   Set titulo = ?, dia_semana = ?, horario = ?, descricao = ?
+                   WHERE id = ?
+    """, (
+        culto.titulo,
+        culto.dia_semana,
+        culto.horario,
+        culto.descricao,
+        culto_id
+    ))
+
+    if cursor.rowcount == 0:
+         connection.close()
+         raise HTTPException(status_code=404, detail="Culto não encontrado")
+    
     connection.commit()
-
-    novo_id = cursor.lastrowid
-
     connection.close()
 
     return {
-        "id": novo_id,
-        "titulo": culto.titulo,
-        "dia_semana": culto.dia_semana,
-        "horario": culto.horario,
-        "descricao": culto.descricao
+             "id":culto_id,
+             "titulo": culto.titulo,
+                "dia_semana": culto.dia_semana,
+                "horario": culto.horario,
+                "descricao": culto.descricao
+        }
+
+def deletar_culto(culto_id):
+    connection = get_connection()
+    cursor = connection.cursor()
+
+    cursor.execute("""
+                       DELETE FROM cultos
+                       WHERE id = ?
+    """, (
+        culto_id,
+    ))
+
+    if cursor.rowcount == 0:
+        
+        connection.close()
+
+        raise HTTPException(status_code=404, detail="Culto não encontrado")
+
+    connection.commit()
+    
+    
+
+    return {
+        "message": "Culto deletado com sucesso"
     }

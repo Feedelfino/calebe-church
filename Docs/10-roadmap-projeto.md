@@ -243,7 +243,7 @@ Backend:
 - Renderização dinâmica dos cultos implementada
 - Configuração CORS implementada e validada
 
-70%
+80%
 ```
 
 ## Banco de Dados
@@ -255,7 +255,7 @@ Backend:
 ## QA
 
 ```txt
-40%
+55%
 ```
 
 ## Deploy
@@ -284,8 +284,8 @@ O progresso geral considera:
 ```
 
 ```txt
-Progresso geral: 84%
-Falta estimada: 16%
+Progresso geral: 90%
+Falta estimada: 10%
 ```
 
 ---
