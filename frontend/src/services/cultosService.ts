@@ -7,7 +7,7 @@ export type Culto = {
 };
 
 export async function buscarCultos(): Promise<Culto[]> {
-    const response = await fetch("http://127.0.0.1:8000/cultos/");
+    const response = await fetch("http://127.0.0.1:800/cultos/");
 
     if (!response.ok) {
         throw new Error("Erro ao buscar cultos");

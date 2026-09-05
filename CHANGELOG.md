@@ -404,15 +404,22 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 
 - Testes de QA do CRUD de cultos utilizando Thunder Client
 - Validação de cenários positivos e negativos da API
+- Implementado fallback local para os horários dos cultos em caso de indisponibilidade da API
+- Criado `cultosFallback.ts` para separar os dados de contingência da lógica do componente
+- Realizados testes de integração do frontend com o backend disponível e indisponível
 
 ## Changed
 
 - Ajuste da função `criar_culto()` para persistir o registro com `commit()`
 - Ajuste da função `criar_culto()` para retornar o objeto criado com o `id` gerado pelo SQLite
 - Remoção do `response_model=CultoResponse` da rota DELETE, adequando a resposta ao formato de mensagem
+- Ajustada a URL de consumo da API de cultos para a porta `800`
+- Refatorado `ServicesSection.tsx` para utilizar dados de contingência externos ao componente
 
 ## Fixed
 
 - Correção do erro 500 no endpoint POST `/cultos/`
 - Correção do erro 500 no endpoint DELETE `/cultos/{id}`
 - Confirmação do retorno 404 para PUT e DELETE com IDs inexistentes
+- Corrigida falha de carregamento dos cultos causada pela divergência entre a porta do frontend e a porta utilizada pelo backend
+- Corrigido desaparecimento dos cards de cultos quando a API está indisponível

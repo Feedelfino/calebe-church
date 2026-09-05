@@ -155,6 +155,11 @@ Status: 🟡 Em andamento
 - validação da renderização dinâmica da seção de cultos;
 - identificação e correção de falhas encontradas durante o QA do CRUD;
 - testes da API realizados com Thunder Client.
+- Testes de integração entre frontend e backend
+- Validação do carregamento dos cultos com a API disponível
+- Validação do comportamento do site com a API indisponível
+- Implementação e validação de fallback local para os horários dos cultos
+- Refatoração dos dados de contingência para `cultosFallback.ts`
 
 ---
 
@@ -262,7 +267,7 @@ Backend:
 ## QA
 
 ```txt
-70%
+80%
 ```
 
 ## Deploy
@@ -322,6 +327,9 @@ Falta estimada: 8%
 - Integração Google Maps
 - Integração com Instagram e YouTube
 - Refinamento visual institucional
+- Integração da seção de cultos com a API FastAPI
+- Fallback local dos horários dos cultos em caso de indisponibilidade da API
+- Separação dos dados de contingência em `cultosFallback.ts`
 
 ## Estrutura
 - Git
@@ -356,13 +364,12 @@ Falta estimada: 8%
 
 # 7. Próximos Passos Imediatos
 
-- Implementar tratamento visual de loading no frontend;
-- implementar tratamento visual de erro no frontend;
-- realizar QA da integração frontend/backend;
-- realizar revisão final de responsividade;
-- realizar revisão de segurança para produção;
-- preparar ambiente de deploy;
-- realizar deploy da V1.
+1. Realizar revisão responsiva final do frontend
+2. Realizar revisão de segurança para produção
+3. Revisar configurações do frontend e backend para ambiente de produção
+4. Preparar o deploy da aplicação
+5. Realizar o deploy da V1
+6. Executar validação final em produção
 
 
 ---

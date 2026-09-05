@@ -3,6 +3,8 @@ import "../../styles/services-section.css";
 
 import { buscarCultos } from "../../services/cultosService";
 import type { Culto } from "../../services/cultosService";
+import { cultosFallback } from "../../data/cultosFallback";
+
 
 function ServicesSection() {
   const [cultos, setCultos] = useState<Culto[]>([]);
@@ -12,11 +14,11 @@ function ServicesSection() {
       try {
         const dados = await buscarCultos();
 
-        console.log("Cultos recebidos da API:", dados);
-
         setCultos(dados);
       } catch (error) {
         console.error("Erro ao carregar cultos:", error);
+
+        setCultos(cultosFallback);
       }
     }
 
