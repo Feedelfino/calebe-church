@@ -23,6 +23,6 @@ def create_culto(culto: CultoCreate):
 def update_culto(culto_id: int, culto: CultoCreate):
     return atualizar_culto(culto_id, culto)
 
-@router.delete("/{culto_id}", response_model=CultoResponse)
+@router.delete("/{culto_id}")
 def delete_culto(culto_id: int):
     return deletar_culto(culto_id)

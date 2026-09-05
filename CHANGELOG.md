@@ -397,3 +397,22 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 * Correção do comportamento do PUT para IDs inexistentes
 * Correção do comportamento do DELETE para IDs inexistentes
 * Padronização da resposta HTTP 404 para cultos não encontrados
+
+# [2026-09-05]
+
+## Added
+
+- Testes de QA do CRUD de cultos utilizando Thunder Client
+- Validação de cenários positivos e negativos da API
+
+## Changed
+
+- Ajuste da função `criar_culto()` para persistir o registro com `commit()`
+- Ajuste da função `criar_culto()` para retornar o objeto criado com o `id` gerado pelo SQLite
+- Remoção do `response_model=CultoResponse` da rota DELETE, adequando a resposta ao formato de mensagem
+
+## Fixed
+
+- Correção do erro 500 no endpoint POST `/cultos/`
+- Correção do erro 500 no endpoint DELETE `/cultos/{id}`
+- Confirmação do retorno 404 para PUT e DELETE com IDs inexistentes

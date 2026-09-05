@@ -31,6 +31,20 @@ def criar_culto(culto):
         culto.descricao
     ))
 
+    connection.commit()
+
+    culto_id = cursor.lastrowid
+
+    connection.close()
+
+    return {
+        "id": culto_id,
+        "titulo": culto.titulo,
+        "dia_semana": culto.dia_semana,
+        "horario": culto.horario,
+        "descricao": culto.descricao
+    }
+
 def atualizar_culto(culto_id, culto):
     connection = get_connection()
     cursor = connection.cursor()

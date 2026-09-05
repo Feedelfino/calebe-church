@@ -59,7 +59,7 @@ Status: ✅ Concluído
 
 ## Fase 2 — Frontend Institucional
 
-Status: Status: ✅ Concluído
+Status: ✅ Concluído
 
 ### Objetivos
 - construção da HomePage;
@@ -85,7 +85,7 @@ Status: Status: ✅ Concluído
 
 ## Fase 3 — Backend e APIs
 
-Status: 🟡 Em andamento
+Status: ✅ Concluído
 
 ### Objetivos
 - criação da API REST;
@@ -93,17 +93,20 @@ Status: 🟡 Em andamento
 - integração frontend/backend;
 - endpoints institucionais.
 
-### Entregas previstas
+### Entregas concluídas
+
 - FastAPI;
 - rotas REST;
-- integração frontend;
-- testes iniciais.
+- CRUD de cultos;
+- integração frontend/backend;
+- tratamento de registros inexistentes com HTTP 404;
+- testes iniciais da API.
 
 ---
 
 ## Fase 4 — Banco de Dados
 
-Status: 🟡 Em andamento
+Status: ✅ Concluído
 
 ### Objetivos
 - modelagem SQL;
@@ -118,10 +121,6 @@ Status: 🟡 Em andamento
 - integração SQLite + FastAPI concluída;
 - seed inicial de banco implementada.
 
-### Entregas previstas
-- tabelas institucionais adicionais;
-- armazenamento de contatos;
-- estrutura preparada para PostgreSQL.
 
 ---
 
@@ -143,11 +142,19 @@ Status: 🟡 Em andamento
 - melhorias de acessibilidade.
 
 ### Entregas concluídas
+
 - testes manuais do endpoint GET /cultos;
 - testes manuais do endpoint POST /cultos;
-- validação da persistência SQLite;
+- testes manuais do endpoint PUT /cultos/{id};
+- testes manuais do endpoint DELETE /cultos/{id};
+- validação da persistência SQLite após criação;
+- validação da persistência SQLite após atualização;
+- validação da exclusão de registros;
+- validação do retorno HTTP 404 para registros inexistentes;
 - validação da integração frontend/backend;
-- validação da renderização dinâmica da seção de cultos.
+- validação da renderização dinâmica da seção de cultos;
+- identificação e correção de falhas encontradas durante o QA do CRUD;
+- testes da API realizados com Thunder Client.
 
 ---
 
@@ -214,15 +221,19 @@ Frontend institucional: 100%
 
 ```txt
 Backend:
+
 - Estrutura arquitetural backend criada
 - FastAPI configurado
 - Uvicorn configurado
 - Rotas modularizadas
 - APIRouter implementado
 - Swagger automático funcionando
-- Endpoint `/health` implementado
-- Endpoint `GET /cultos` implementado
-- Endpoint `POST /cultos` implementado
+- Endpoint /health implementado
+- Endpoint GET /cultos implementado
+- Endpoint POST /cultos implementado
+- Endpoint PUT /cultos/{id} implementado
+- Endpoint DELETE /cultos/{id} implementado
+- CRUD de cultos concluído
 - Schemas Pydantic implementados
 - Response Models implementados
 - Service Layer implementada
@@ -230,32 +241,28 @@ Backend:
 - Persistência real de dados implementada
 - Integração SQL com FastAPI funcional
 - Seed inicial de banco implementada
-- FastAPI configurado
-- APIRouter implementado
-- Swagger funcionando
-- Endpoint GET /cultos implementado
-- Endpoint POST /cultos implementado
-- Integração frontend/backend concluída para cultos
-- Serviço `cultosService` implementado
-- Consumo da rota `GET /cultos` via React
+- Tratamento HTTP 404 para registros inexistentes
+- Configuração CORS implementada e validada
+- Serviço cultosService implementado
+- Consumo da rota GET /cultos via React
 - useState implementado para gerenciamento dos cultos
 - useEffect implementado para carregamento automático
 - Renderização dinâmica dos cultos implementada
-- Configuração CORS implementada e validada
+- Integração frontend/backend concluída para cultos
 
-80%
+90%
 ```
 
 ## Banco de Dados
 
 ```txt
-60%
+100%
 ```
 
 ## QA
 
 ```txt
-55%
+70%
 ```
 
 ## Deploy
@@ -284,8 +291,8 @@ O progresso geral considera:
 ```
 
 ```txt
-Progresso geral: 90%
-Falta estimada: 10%
+Progresso geral: 92%
+Falta estimada: 8%
 ```
 
 ---
@@ -339,16 +346,24 @@ Falta estimada: 10%
 - Persistência de dados
 - Configuração de CORS
 - Integração React ↔ FastAPI
+- Endpoint PUT /cultos/{id}
+- Endpoint DELETE /cultos/{id}
+- CRUD completo de cultos
+- Tratamento HTTP 404 para registros inexistentes
+- Validação do CRUD com Thunder Client
 
 ---
 
 # 7. Próximos Passos Imediatos
 
-- Implementar endpoint PUT /cultos
-- Implementar endpoint DELETE /cultos
-- Implementar tratamento visual de loading
-- Implementar tratamento visual de erro
-- Planejar módulo de eventos
+- Implementar tratamento visual de loading no frontend;
+- implementar tratamento visual de erro no frontend;
+- realizar QA da integração frontend/backend;
+- realizar revisão final de responsividade;
+- realizar revisão de segurança para produção;
+- preparar ambiente de deploy;
+- realizar deploy da V1.
+
 
 ---
 
