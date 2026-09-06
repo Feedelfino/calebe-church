@@ -15,7 +15,7 @@
 
     margin-bottom: var(--space-sm);
 
-    color: var(--color-secordary);
+    color: var(--color-secondary);
 
     font-size: var(--font-size-sm);
 
@@ -32,7 +32,7 @@
 }
 
 .location-header h2 strong {
-    color: var(--color-secordary);
+    color: var(--color-secondary);
 }
 
 .location-content {
@@ -51,7 +51,7 @@
 
    padding: var(--space-xl);
 
-    color:var(--colr-white);
+    color:var(--color-white);
 
    border-radius: 24px;
 
@@ -78,14 +78,14 @@
 
 .location-card h3 {
     margin-bottom: var(--space-lg);
-    color: var(--colr-white);
+    color: var(--color-white);
     font-size: var(--font-size-xl);
 }
 
 .location-subtitle {
      margin-bottom: var(--space-lg);
 
-    color: var(--color-secordary);
+    color: var(--color-secondary);
 }
 
 .location-info {
@@ -95,7 +95,7 @@
 .location-info h4 {
     margin-bottom: var(--space-xs);
 
-    color: var(--colr-white);
+    color: var(--color-white);
 }
 
 .location-info p {
@@ -127,7 +127,7 @@
 }
 
 .location-button:hover {
-    opacity: 0,85
+    opacity: 0.85;
 }
 
 @media (max-width: 768px) {
@@ -138,7 +138,7 @@
     .location-map,
     .location-card {
         min-height: auto;
-
+        padding: var(--space-lg);
         text-align: center;
     }
 }

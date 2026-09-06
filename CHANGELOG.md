@@ -407,6 +407,9 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 - Implementado fallback local para os horários dos cultos em caso de indisponibilidade da API
 - Criado `cultosFallback.ts` para separar os dados de contingência da lógica do componente
 - Realizados testes de integração do frontend com o backend disponível e indisponível
+- Realizados testes de responsividade do frontend em dispositivos mobile, tablet e desktop.
+- Validado o frontend com diferentes dimensões de viewport utilizando Mobile Preview.
+
 
 ## Changed
 
@@ -415,6 +418,11 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 - Remoção do `response_model=CultoResponse` da rota DELETE, adequando a resposta ao formato de mensagem
 - Ajustada a URL de consumo da API de cultos para a porta `800`
 - Refatorado `ServicesSection.tsx` para utilizar dados de contingência externos ao componente
+- Refatorada a Navbar para utilizar menu responsivo em dispositivos móveis.
+- Ajustados espaçamentos e largura útil das seções NAF, Localização e Footer em dispositivos móveis.
+- Ajustada a hierarquia tipográfica da seção NAF e do Footer para melhorar a legibilidade.
+- Reorganizada a estrutura dos cards de redes sociais para alinhar ícones, títulos e conteúdo.
+- Ajustado o tamanho dos ícones das redes sociais para melhorar a consistência visual.
 
 ## Fixed
 
@@ -423,3 +431,8 @@ Este projeto segue uma organização baseada em evolução contínua, versioname
 - Confirmação do retorno 404 para PUT e DELETE com IDs inexistentes
 - Corrigida falha de carregamento dos cultos causada pela divergência entre a porta do frontend e a porta utilizada pelo backend
 - Corrigido desaparecimento dos cards de cultos quando a API está indisponível
+- Corrigidas declarações CSS inválidas nas seções de Redes Sociais e Localização.
+- Corrigido comportamento da Navbar em telas menores com implementação de menu responsivo.
+- Corrigido aproveitamento de espaço dos cursos do NAF em dispositivos móveis.
+- Corrigido alinhamento e proporção dos elementos dos cards de redes sociais.
+- Corrigida largura global do container causada por sintaxe incorreta na função `min()`.

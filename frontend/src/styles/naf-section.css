@@ -1,145 +1,138 @@
 .naf-section {
-    padding: var(--section-padding);
+  padding: var(--section-padding);
 
-    background-color: var(--color-primary);
+  background-color: var(--color-primary);
 
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 .naf-container {
-    text-align: center;
+  text-align: center;
 }
 
 .naf-header span {
-    display: inline-block;
+  display: inline-block;
+  margin-bottom: var(--space-sm);
+  color: var(--color-secondary);
 
-    margin-bottom: var(--space-sm);
+  font-size: var(--font-size-base);
+  font-weight: 600;
 
-    color: var(--color-secondary);
-
-    font-size: var(--font-size-sm);
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .naf-header h2 {
-    font-size: var(--font-size-2xl);
-    line-height: 1.2;
-    word-break: normal;
+  font-size: var(--font-size-2xl);
+  line-height: 1.2;
+  word-break: normal;
 }
 
 .naf-header p {
-    max-width: 760px;
+  max-width: 760px;
 
-    margin: 0 auto var(--space-xl);
+  margin: 0 auto var(--space-xl);
 
-    line-height: 1.8;
+  line-height: 1.8;
 }
 
 .naf-grid {
-    display: grid;
-    grid-template-columns: repeat(2,420px);
-    justify-content: center;
-    gap: var(--space-lg);
-    
+  display: grid;
+  grid-template-columns: repeat(2, 420px);
+  justify-content: center;
+  gap: var(--space-lg);
 }
 
 .naf-card {
-    position: relative;
+  position: relative;
 
-    display: flex;
+  display: flex;
 
-   flex-direction: column;
+  flex-direction: column;
 
-   justify-content: center;
+  justify-content: center;
 
-   align-items: center;
+  align-items: center;
 
-   text-align: center;
+  text-align: center;
 
-   min-height: 220px;
+  min-height: 220px;
 
-   padding: var(--space-lg);
+  padding: var(--space-lg);
 
-   border-radius: 24px;
+  border-radius: 24px;
 
-   background: linear-gradient(
+  background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.08),
     rgba(255, 255, 255, 0.03)
-   );
+  );
 
-   border: 1px solid rgba(212, 175, 55, 0.18);
+  border: 1px solid rgba(212, 175, 55, 0.18);
 
-   overflow: hidden;
+  overflow: hidden;
 
-   transition: 
-   transform 0.3s ease,
-   box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .naf-card:hover {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 
-    border-color: rgba(212, 175, 55, 0.5);
+  border-color: rgba(212, 175, 55, 0.5);
 
-    box-shadow:
-    0 0 30px rgba(212, 175, 55, 0.08);
-
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.08);
 }
 
 .naf-card.featured {
-    border: 1px solid rgba(212, 175, 55, 0.6);
+  border: 1px solid rgba(212, 175, 55, 0.6);
 
-    background: linear-gradient(
-        135deg,
-        rgba(212, 175, 55, 0.08),
-        rgba(255, 255, 255, 0.03)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 55, 0.08),
+    rgba(255, 255, 255, 0.03)
+  );
 
-    box-shadow: 
-    0 0 40px rgba(212, 175, 55, 0.08);
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.08);
 }
 
 .naf-card h3 {
-    margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-sm);
 
-    color: var(--color-white);
+  color: var(--color-white);
 
-    font-size: var(--font-size-xl);
-
+  font-size: var(--font-size-xl);
 }
 
 .naf-card p {
-    max-width: 420px;
+  max-width: 420px;
 
-    line-height: 1.8;
+  line-height: 1.8;
 
-    color: rgba(255,255,255,0.88);
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .naf-footer {
-    margin-top: var(--space-xl);
+  margin-top: var(--space-xl);
 
-    padding: var(--space-xl);
+  padding: var(--space-xl);
 
-    border-radius: 20px;
+  border-radius: 20px;
 
-    background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
 
-    border: 1px solid rgba(255, 255, 255, 0.8)
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .naf-footer h3 {
-    margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-sm);
 
-    font-size: var(--font-size-xl);
+  font-size: var(--font-size-xl);
 }
 
 .naf-footer p {
-    color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .naf-courses {
@@ -163,16 +156,15 @@
 }
 
 .naf-courses-header span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: var(--space-sm);
 
-  width: 44px;
-  height: 44px;
+  border-radius: 8px;
 
-  border-radius: 12px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.25);
 
-  background-color: rgba(212, 175, 55, 0.18);
+  color: var(--color-white);
+  font-size: var(--font-size-base);
 }
 
 .naf-courses-header h3 {
@@ -199,24 +191,25 @@
 }
 
 @media (max-width: 768px) {
-    .naf-grid {
-        grid-template-columns: 1fr;
-    }
+  .naf-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .naf-courses {
-        text-align:left;
-    }
-    .naf-courses-grid {
-        grid-template-columns: 1fr;
-    }
+  .naf-courses {
+    text-align: left;
+    padding: var(--space-md);
+  }
+  .naf-courses-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .naf-courses-header {
-        justify-content: center;
-    }
+  .naf-courses-header {
+    justify-content: center;
+  }
 
-    .naf-card {
-        min-height:auto;
-        padding: var(--space-lg);
-        text-align: left;
-    }
+  .naf-card {
+    min-height: auto;
+    padding: var(--space-lg);
+    text-align: left;
+  }
 }

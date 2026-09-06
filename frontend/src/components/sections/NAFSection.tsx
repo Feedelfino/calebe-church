@@ -59,7 +59,7 @@ function NAFSection() {
                         <span>Teclado</span>
                         <span>Bateria</span>
                         <span>Excel</span>
-                        <span>Fotorgrafia</span>
+                        <span>Fotografia</span>
                         <span>Educação Financeira</span>
                         <span>Desenvolvimento Pessoal</span>
                         <span>Casais</span>

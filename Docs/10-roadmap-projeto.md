@@ -213,7 +213,7 @@ Percentual = entregáveis concluídos / total de entregáveis planejados
 [x] NAFSection
 [x] SocialMediaSection
 [x] LocationSection
-[x] Responsividade mobile
+[x] Responsividade mobile, tablet e desktop
 [x] Refinamento visual final
 ```
 
@@ -267,7 +267,21 @@ Backend:
 ## QA
 
 ```txt
-80%
+QA realizado:
+
+- CRUD da API validado com Thunder Client
+- Cenários positivos e negativos do CRUD validados
+- Integração frontend/backend validada
+- Fallback dos cultos validado com backend indisponível
+- Responsividade mobile validada
+- Responsividade tablet validada
+- Responsividade desktop validada
+- Navbar mobile e navegação por âncoras validadas
+- Build de produção do frontend validado
+- ESLint executado sem erros
+- Ausência de regressões visuais identificada após os ajustes responsivos
+
+90%
 ```
 
 ## Deploy
@@ -296,8 +310,8 @@ O progresso geral considera:
 ```
 
 ```txt
-Progresso geral: 92%
-Falta estimada: 8%
+Progresso geral: 94%
+Falta estimada: 6%
 ```
 
 ---
@@ -323,7 +337,8 @@ Falta estimada: 8%
 - SocialMediaSection
 - LocationSection
 - Footer completo
-- Responsividade mobile
+- Responsividade validada em mobile, tablet e desktop
+- Menu responsivo da Navbar para dispositivos móveis
 - Integração Google Maps
 - Integração com Instagram e YouTube
 - Refinamento visual institucional
@@ -364,12 +379,17 @@ Falta estimada: 8%
 
 # 7. Próximos Passos Imediatos
 
-1. Realizar revisão responsiva final do frontend
-2. Realizar revisão de segurança para produção
-3. Revisar configurações do frontend e backend para ambiente de produção
-4. Preparar o deploy da aplicação
-5. Realizar o deploy da V1
-6. Executar validação final em produção
+# 7. Próximos Passos Imediatos
+
+1. Realizar revisão de segurança para produção
+
+2. Revisar configurações do frontend e backend para ambiente de produção
+
+3. Preparar o deploy da aplicação
+
+4. Realizar o deploy da V1
+
+5. Executar validação final em produção
 
 
 ---
